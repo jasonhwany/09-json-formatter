@@ -1,5 +1,19 @@
 "use client";
 import AdUnit from "@/components/AdUnit"
+
+import Script from "next/script"
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "JSON 포매터 (JSON Formatter)",
+  url: "https://json.moneystom7.com",
+  description: "JSON 데이터를 보기 좋게 정렬하고 검증하는 무료 도구",
+  applicationCategory: "UtilityApplication",
+  operatingSystem: "Any",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },
+  inLanguage: ["ko", "en"],
+}
 import { useState } from "react";
 
 export default function JSONFormatter() {
